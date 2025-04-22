@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Vicande School</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+</head>
+
+<body class="antialiased text-gray-800">
+    <!-- Top Info Bar -->
+    <div class="bg-green-600 text-white text-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-1 px-4">
+            <div class="flex space-x-4">
+                <div class="flex items-center"><i class="fas fa-envelope mr-1"></i><a
+                        href="mailto:vicandeschoolay20@gmail.com"
+                        class="hover:underline">vicandeschoolay20@gmail.com</a></div>
+                <div class="flex items-center"><i class="fas fa-phone mr-1"></i><a href="tel:+233244756081"
+                        class="hover:underline">+233 244756 081</a></div>
+            </div>
+            <div class="flex space-x-3">
+                <a href="#" class="hover:text-gray-200"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-gray-200"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-gray-200"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-gray-200"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-gray-200"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+<!-- Navbar -->
+<nav class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="#"><img src="./assets/img/vicande_logo.png" alt="Vicande Logo" class="h-10" /></a>
+            </div>
+            <!-- Nav Links -->
+            <div class="hidden md:flex space-x-8">
+                <a href="./" class="text-gray-700 hover:text-green-600">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-green-600">About Us</a>
+                <a href="adm.html" class="text-gray-700 hover:text-green-600">Admissions</a>
+                <a href="academics.html" class="text-gray-700 hover:text-green-600">Academics</a>
+                <a href="contact.html" class="text-gray-700 hover:text-green-600">Contact</a>
+                <a href="#gallery" class="text-gray-700 hover:text-green-600">Gallery</a>
+            </div>
+            <!-- Hamburger -->
+            <div class="md:hidden">
+                <button id="nav-toggle" class="focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="nav-menu" class="md:hidden hidden bg-white px-4 pb-4">
+        <a href="#" class="block py-2 text-gray-700 hover:text-green-600">Home</a>
+        <a href="about.html" class="block py-2 text-gray-700 hover:text-green-600">About Us</a>
+        <a href="adm.html" class="block py-2 text-gray-700 hover:text-green-600">Admissions</a>
+        <a href="academics.html" class="block py-2 text-gray-700 hover:text-green-600">Academics</a>
+        <a href="contact.html" class="block py-2 text-gray-700 hover:text-green-600">Contact</a>
+        <a href="#gallery" class="block py-2 text-gray-700 hover:text-green-600">Gallery</a>
+    </div>
+</nav>
+
+    <!-- Hero Banner -->
+    <section class="relative bg-cover bg-center h-60" style="background-image:url('assets/img/hero-contact.jpg')"
+        data-aos="fade-up">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative h-full flex items-center justify-center">
+            <div class="text-center text-white">
+                <h1 class="text-4xl font-bold">Contact Us</h1>
+                <nav class="mt-2 text-sm">
+                    <a href="index.html" class="hover:underline">Home</a><span class="mx-2">/</span><span>Contact</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form -->
+    <section class="py-16 px-4 max-w-3xl mx-auto" data-aos="fade-up">
+        <h2 class="text-3xl font-semibold text-center mb-4">Send Us a Message</h2>
+        <p class="text-gray-600 text-center mb-8">We’re delighted to hear from you—leave your questions or feedback
+            below!</p>
+        <form class="space-y-6 bg-white p-8 rounded-lg shadow-lg">
+            <div>
+                <label class="block text-gray-700">Full Name <span class="text-red-600">*</span></label>
+                <input type="text" class="w-full border border-gray-300 rounded-lg p-2 mt-1 focus:outline-green-500"
+                    required>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-gray-700">Email <span class="text-red-600">*</span></label>
+                    <input type="email"
+                        class="w-full border border-gray-300 rounded-lg p-2 mt-1 focus:outline-green-500" required>
+                </div>
+                <div>
+                    <label class="block text-gray-700">Phone Number</label>
+                    <input type="tel" class="w-full border border-gray-300 rounded-lg p-2 mt-1 focus:outline-green-500">
+                </div>
+            </div>
+            <div>
+                <label class="block text-gray-700">Message <span class="text-red-600">*</span></label>
+                <textarea rows="4" class="w-full border border-gray-300 rounded-lg p-2 mt-1 focus:outline-green-500"
+                    required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit"
+                    class="bg-green-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-green-700 transition">Submit
+                    <i class="fas fa-paper-plane ml-2"></i></button>
+            </div>
+        </form>
+        <!-- Hours -->
+        <div class="mt-12 space-y-8">
+            <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-2xl font-semibold">Office Hours</h3>
+                <p class="text-gray-600">Mon–Fri: 7:15 a.m.–5:00 p.m.<br />Sat: 8:30 a.m.–1:30 p.m.</p>
+            </div>
+            <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-2xl font-semibold">School Hours</h3>
+                <p class="text-gray-600">Mon–Thu: 8:00 a.m.–3:30 p.m.<br />Fri: 8:00 a.m.–2:30 p.m.<br />Pick-up by
+                    4:30 p.m.</p>
+                <p class="text-red-600 mt-2">Please arrange with school if late; extra fees may apply.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Map -->
+    <section class="py-16 px-4" data-aos="fade-up">
+        <h2 class="text-3xl font-semibold text-center mb-8">Our Location</h2>
+        <div id="map" class="w-full h-96 rounded-lg shadow-lg"></div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200 py-12 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-semibold mb-4">About Us</h4>
+                <p>Our philosophy is to create an enabling environment employing professionalism, team spirit,
+                    innovation, and quality education.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Information</h4>
+                <ul class="space-y-2">
+                    <li><i class="fas fa-map-marker-alt mr-2"></i>GPS: AK-352-8566</li>
+                    <li><i class="fas fa-map-pin mr-2"></i>P. M. B. AY 20 Asuoyeboa - Kumasi, Ghana</li>
+                    <li><i class="fas fa-envelope mr-2"></i><a href="mailto:info@vicandeschool.com"
+                            class="hover:underline">info@vicandeschool.com</a></li>
+                    <li><i class="fas fa-phone mr-2"></i><a href="tel:+233244756081" class="hover:underline">+233 244756
+                            081</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Explore</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="admissions.html" class="hover:underline">Admissions</a></li>
+                    <li><a href="academics.html" class="hover:underline">Academics</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-sm mt-8">&copy; 2024 Vicande School. All rights reserved.</div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true });</script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script>
+        // Navbar toggle
+        document.getElementById('nav-toggle').addEventListener('click', () => document.getElementById('nav-menu').classList.toggle('hidden'));
+        // Initialize Leaflet map
+        const map = L.map('map').setView([6.692, -1.627], 15);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
+        L.marker([6.692, -1.627]).addTo(map).bindPopup('Vicande School').openPopup();
+    </script>
+</body>
+
+</html>

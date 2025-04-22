@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Vicande School</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="antialiased text-gray-800 about">
+    <!-- Top Info Bar -->
+    <div class="bg-green-600 text-white text-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-1 px-4">
+            <div class="flex space-x-4">
+                <div class="flex items-center">
+                    <i class="fas fa-envelope mr-1"></i>
+                    <a href="mailto:vicandeschoolay20@gmail.com" class="hover:underline">vicandeschoolay20@gmail.com</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-phone mr-1"></i>
+                    <a href="tel:+233244756081" class="hover:underline">+233 244756 081</a>
+                </div>
+            </div>
+            <div class="flex space-x-3">
+                <a href="https://facebook.com/vicandesch" target="_blank" class="hover:text-gray-200"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/vicande_school" target="_blank" class="hover:text-gray-200"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-gray-200"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-gray-200"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-gray-200"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+<!-- Navbar -->
+<nav class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="#"><img src="./assets/img/vicande_logo.png" alt="Vicande Logo" class="h-10" /></a>
+            </div>
+            <!-- Nav Links -->
+            <div class="hidden md:flex space-x-8">
+                <a href="./" class="text-gray-700 hover:text-green-600">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-green-600">About Us</a>
+                <a href="adm.html" class="text-gray-700 hover:text-green-600">Admissions</a>
+                <a href="academics.html" class="text-gray-700 hover:text-green-600">Academics</a>
+                <a href="contact.html" class="text-gray-700 hover:text-green-600">Contact</a>
+                <a href="#gallery" class="text-gray-700 hover:text-green-600">Gallery</a>
+            </div>
+            <!-- Hamburger -->
+            <div class="md:hidden">
+                <button id="nav-toggle" class="focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="nav-menu" class="md:hidden hidden bg-white px-4 pb-4">
+        <a href="#" class="block py-2 text-gray-700 hover:text-green-600">Home</a>
+        <a href="about.html" class="block py-2 text-gray-700 hover:text-green-600">About Us</a>
+        <a href="adm.html" class="block py-2 text-gray-700 hover:text-green-600">Admissions</a>
+        <a href="academics.html" class="block py-2 text-gray-700 hover:text-green-600">Academics</a>
+        <a href="contact.html" class="block py-2 text-gray-700 hover:text-green-600">Contact</a>
+        <a href="#gallery" class="block py-2 text-gray-700 hover:text-green-600">Gallery</a>
+    </div>
+</nav>
+
+
+    <!-- About Hero -->
+    <section class="relative bg-cover bg-center h-96" style="background-image:url('images/gallery-24.jpg')"
+        data-aos="fade-up">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative flex items-center justify-center h-full">
+            <div class="text-center text-white px-4">
+                <h1 class="text-4xl font-bold mb-4">About Vicande School</h1>
+                <p class="max-w-2xl mx-auto">Vicande School is a reputable educational institution committed to
+                    delivering high-quality education. It fosters an inclusive and nurturing environment where students
+                    can grow academically, socially, and personally.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-16 px-4 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12" data-aos="fade-up">
+        <div class="space-y-4">
+            <h2 class="text-2xl font-semibold">Our Mission</h2>
+            <p>At Vicande School, our mission is to provide a nurturing and inclusive environment where every student
+                can achieve academic excellence and personal growth. We integrate values-based education to shape
+                individuals who contribute positively to society.</p>
+            <img src="assets/img/gallery/gallery-15.jpg" alt="Mission Image" class="w-full rounded-lg mt-4">
+        </div>
+        <div class="space-y-4">
+            <h2 class="text-2xl font-semibold">Our Vision</h2>
+            <p>We envision a dynamic learning community where every student is empowered to reach their full potential.
+                Through excellence, inclusivity, and holistic development, we inspire a lifelong love of learning and
+                prepare our students to make meaningful contributions.</p>
+            <img src="assets/img/gallery/gallery-4.jpg" alt="Vision Image" class="w-full rounded-lg mt-4">
+        </div>
+    </section>
+
+    <!-- History -->
+    <section class="py-16 bg-gray-50 px-4" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Our History</h2>
+            <p class="mb-4">In 1991-1993, growth led to acquisition of ten acres at Apatrapa. By 1996, we reached JHS
+                level; in 1999 our pioneers excelled in BECE, placing us top in Kumasi Sub-Metro.</p>
+            <img class="py-2 mx-auto w-[50%]" src="assets/img/history-icons.png" alt="History Icons">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                <p>Vicande School offers a well-rounded education, fostering growth in spiritual, intellectual,
+                    physical, and emotional areas while emphasizing moral values and character development.</p>
+                <p>From the moment your family chooses Vicande School, the dedicated faculty and staff will ensure a
+                    smooth and supportive transition for your child.</p>
+                <p>Students thrive through a balance of academics, character development, and extracurricular
+                    opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="py-16 px-4 max-w-7xl mx-auto space-y-16" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-green-600 mb-8 text-center">Our Philosophy</h2>
+        <div class="space-y-12">
+            <div class="md:flex items-center gap-8">
+                <img src="assets/img/phil-icons-1.png" alt="Quality Education" class="w-20 h-20">
+                <div>
+                    <h3 class="text-xl font-semibold">Quality Education</h3>
+                    <p>Vicande School is dedicated to delivering high-quality education by implementing a comprehensive
+                        curriculum that addresses both academic and personal development. The school encourages students
+                        to explore their interests while developing essential skills such as critical thinking,
+                        collaboration, and creativity. Teachers focus on nurturing students’ intellectual growth through
+                        interactive learning methods, ensuring they are prepared for future academic and career
+                        challenges.</p>
+                </div>
+            </div>
+            <div class="md:flex items-center gap-8">
+                <img src="assets/img/phil-icons-2.png" alt="Proven Track Record" class="w-20 h-20">
+                <div>
+                    <h3 class="text-xl font-semibold">Proven Track Record</h3>
+                    <p>Vicande School has established a strong reputation for excellence in education, demonstrated
+                        through various achievements and milestones that highlight our commitment to student success.
+                        Our students consistently achieve high academic standards, evidenced by impressive performance
+                        on standardized tests and university entrance exams.</p>
+                </div>
+            </div>
+            <div class="md:flex items-center gap-8">
+                <img src="assets/img/phil-icons-3.png" alt="Enabling Environment" class="w-20 h-20">
+                <div>
+                    <h3 class="text-xl font-semibold">Enabling Environment and Professionalism</h3>
+                    <p>Vicande School is dedicated to creating an enabling environment that fosters learning, growth,
+                        and development for all students. Our modern classrooms, laboratories, and recreational spaces
+                        are designed to support various learning styles and activities. We promote the emotional and
+                        mental well-being of our students through counseling services, wellness programs, and
+                        extracurricular activities that encourage a balanced lifestyle and personal growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="py-16 px-4 bg-gray-50" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center">Our Team</h2>
+            <p class="mb-12 text-center">At Vicande School, our team of dedicated professionals is essential to
+                delivering high-quality education, fostering a positive learning environment, and ensuring every
+                student’s success.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <img src="images/team/1.jpg" alt="Mr. Godwin Oduro"
+                        class="mx-auto rounded-lg w-full h-48 object-cover mb-4">
+                    <h4 class="font-semibold">Mr. Godwin Oduro</h4>
+                    <p class="text-sm text-gray-600">CEO/Board Chairman</p>
+                </div>
+                <div class="text-center">
+                    <img src="images/team/2.jpg" alt="Mr. Kwaku Oduro Frikyi"
+                        class="mx-auto rounded-lg w-full h-48 object-cover mb-4">
+                    <h4 class="font-semibold">Mr. Kwaku Oduro Frikyi</h4>
+                    <p class="text-sm text-gray-600">Board Member</p>
+                </div>
+                <div class="text-center">
+                    <img src="images/team/3.jpg" alt="Madam Francisca Nambu"
+                        class="mx-auto rounded-lg w-full h-48 object-cover mb-4">
+                    <h4 class="font-semibold">Madam Francisca Nambu</h4>
+                    <p class="text-sm text-gray-600">Board Member</p>
+                </div>
+                <div class="text-center">
+                    <img src="images/team/4.jpg" alt="Mr. Dickson A Opanbour"
+                        class="mx-auto rounded-lg w-full h-48 object-cover mb-4">
+                    <h4 class="font-semibold">Mr. Dickson A Opanbour</h4>
+                    <p class="text-sm text-gray-600">Board Member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200 py-12 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-semibold mb-4">About Us</h4>
+                <p>Our philosophy is to create an enabling environment which employs professionalism, team spirit and
+                    innovation and provide quality education.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Information</h4>
+                <ul class="space-y-2">
+                    <li><i class="fas fa-map-marker-alt mr-2"></i>GPS: AK-352-8566</li>
+                    <li><i class="fas fa-map-pin mr-2"></i>P. M. B. AY 20 Asuoyeboa - Kumasi, Ghana</li>
+                    <li><i class="fas fa-envelope mr-2"></i><a href="mailto:info@vicandeschool.com"
+                            class="hover:underline">info@vicandeschool.com</a></li>
+                    <li><i class="fas fa-phone mr-2"></i><a href="tel:+233244756081" class="hover:underline">+233 244756
+                            081</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Explore</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="adm.html" class="hover:underline">Admissions</a></li>
+                    <li><a href="academics.html" class="hover:underline">Academics</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-sm mt-8">&copy; 2024 Vicande School. All rights reserved.</div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true });</script>
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function () {
+            document.getElementById('nav-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

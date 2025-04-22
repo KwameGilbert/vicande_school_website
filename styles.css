@@ -1,0 +1,120 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #004080;
+  color: #fff;
+  padding: 1rem 0;
+}
+.navbar .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-links li a {
+  color: #fff;
+}
+.toggle-nav {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* Hero */
+.hero {
+  background: url("https://source.unsplash.com/featured/?school,students")
+    center/cover no-repeat;
+  color: #fff;
+  padding: 6rem 0;
+  text-align: center;
+}
+.hero .btn {
+  background: #ffcc00;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.hero .btn:hover {
+  opacity: 0.9;
+}
+
+/* Sections */
+nsection {
+  padding: 4rem 0;
+}
+.about-flex,
+.events-grid,
+.team-grid,
+.contact-flex {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.team-member {
+  text-align: center;
+}
+.events-grid article {
+  flex: 1;
+}
+.btn.outline {
+  border: 2px solid #004080;
+  background: none;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Footer */
+.footer {
+  background: #f4f4f4;
+  padding: 2rem 0;
+}
+.footer-flex {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+  .toggle-nav {
+    display: block;
+  }
+}

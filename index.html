@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vicande School</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-sA+e2+hVQ3Fjg8pM3juxOzBfDeYShbYhG8EYf4PsZ3I=" crossorigin="" />
+</head>
+
+<body class="antialiased text-gray-800">
+    <!-- Top Info Bar -->
+    <div class="bg-green-600 text-white text-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-1 px-4">
+            <div>
+                <i class="fas fa-envelope mr-1"></i>
+                <a href="mailto:vicandeschoolay20@gmail.com" class="hover:underline">vicandeschoolay20@gmail.com</a>
+                <span class="mx-3">|</span>
+                <i class="fas fa-phone mr-1"></i>
+                <a href="tel:+233244756081" class="hover:underline">+233 244756 081</a>
+            </div>
+            <div class="space-x-3">
+                <a href="#" class="hover:text-gray-200"><i class="fas fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-gray-200"><i class="fas fa-twitter"></i></a>
+                <a href="#" class="hover:text-gray-200"><i class="fas fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#"><img src="./assets/img/vicande_logo.png" alt="Vicande Logo" class="h-10" /></a>
+                </div>
+                <!-- Nav Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="./" class="text-gray-700 hover:text-green-600">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-green-600">About Us</a>
+                    <a href="adm.html" class="text-gray-700 hover:text-green-600">Admissions</a>
+                    <a href="academics.html" class="text-gray-700 hover:text-green-600">Academics</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-green-600">Contact</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-green-600">Gallery</a>
+                </div>
+                <!-- Hamburger -->
+                <div class="md:hidden">
+                    <button id="nav-toggle" class="focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="nav-menu" class="md:hidden hidden bg-white px-4 pb-4">
+            <a href="#" class="block py-2 text-gray-700 hover:text-green-600">Home</a>
+            <a href="about.html" class="block py-2 text-gray-700 hover:text-green-600">About Us</a>
+            <a href="adm.html" class="block py-2 text-gray-700 hover:text-green-600">Admissions</a>
+            <a href="academics.html" class="block py-2 text-gray-700 hover:text-green-600">Academics</a>
+            <a href="contact.html" class="block py-2 text-gray-700 hover:text-green-600">Contact</a>
+            <a href="#gallery" class="block py-2 text-gray-700 hover:text-green-600">Gallery</a>
+        </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <section class="relative" data-aos="fade-up">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Replace src with actual image paths -->
+                <div class="swiper-slide"><img src="images/gallery-23.jpg" alt="Slide 1"
+                        class="w-full h-96 object-cover"></div>
+                <div class="swiper-slide"><img src="images/gallery-22.jpg" alt="Slide 2"
+                        class="w-full h-96 object-cover"></div>
+                <div class="swiper-slide"><img src="images/gallery-7.jpg" alt="Slide 3"
+                        class="w-full h-96 object-cover"></div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="py-16 text-center px-4" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-green-600 mb-4">Welcome to <span class="text-black">Vicande School</span>
+        </h2>
+        <p class="max-w-2xl mx-auto text-gray-700 mb-8">The Mission of Vicande School is to empower our students to
+            achieve their greatest potential both as students and as members of their community.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div class="flex flex-col items-center">
+            <img src="assets/img/healthcare.png" alt="We Care" class="w-16 h-16 object-cover rounded-full mb-2">
+            <h4 class="font-semibold">We Care</h4>
+            </div>
+            <div class="flex flex-col items-center">
+            <img src="assets/img/growth.png" alt="We Nurture" class="w-16 h-16 object-cover rounded-full mb-2">
+            <h4 class="font-semibold">We Nurture</h4>
+            </div>
+            <div class="flex flex-col items-center">
+            <img src="assets/img/education.png" alt="We Educate" class="w-16 h-16 object-cover rounded-full mb-2">
+            <h4 class="font-semibold">We Educate</h4>
+            </div>
+            <div class="flex flex-col items-center">
+            <img src="assets/img/develop.png" alt="We Develop" class="w-16 h-16 object-cover rounded-full mb-2">
+            <h4 class="font-semibold">We Develop</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Cards Section -->
+    <section class="py-16 px-4 bg-gray-50" data-aos="fade-up">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="images/gallery-13.jpg" alt="Resources"
+                    class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-semibold">Resources</h3>
+                    <p class="mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Provide resources
+                        for academic purposes</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="images/gallery-3.jpg" alt="Facilities"
+                    class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-semibold">Facilities</h3>
+                    <p class="mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Modern classrooms,
+                        science labs and libraries to study</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="images/gallery-24.jpg" alt="Instruction"
+                    class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-semibold">Instruction</h3>
+                    <p class="mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">We believe in
+                        rigorous problem-solving to nurture our kids</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Philosophy Section -->
+    <section id="philosophy" class="py-16 px-4" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-green-600 text-center mb-12">OUR PHILOSOPHY</h2>
+        <!-- Quality Education -->
+        <div class="max-w-6xl mx-auto md:flex items-center gap-8 mb-12">
+            <img src="assets/img/gallery/gallery-36.jpg" alt="Quality Education"
+                class="w-full md:w-1/2 h-64 object-cover rounded-lg">
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">Quality Education</h3>
+                <p class="text-gray-700 mb-4">Vicande School is dedicated to delivering high-quality education by
+                    implementing a comprehensive curriculum that addresses both academic and personal development. The
+                    school encourages students to explore their interests while developing essential skills such as
+                    critical thinking, collaboration, and creativity. Teachers focus on nurturing students’ intellectual
+                    growth through interactive learning methods, ensuring they are prepared for future academic and
+                    career challenges.</p>
+                <a href="#" class="inline-block font-semibold underline hover:text-green-600">Learn about our school</a>
+            </div>
+        </div>
+        <!-- Proven Track Record -->
+        <div class="max-w-6xl mx-auto md:flex items-center gap-8 mb-12 md:flex-row-reverse">
+            <img src="assets/img/gallery/gallery-8.jpg" alt="Proven Track Record"
+                class="w-full md:w-1/2 h-64 object-cover rounded-lg">
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">Proven Track Record</h3>
+                <p class="text-gray-700 mb-4">Vicande School continually demonstrates success through our alumni
+                    achievements and academic results, reflecting our commitment to excellence and student growth.</p>
+                <a href="#" class="inline-block font-semibold underline hover:text-green-600">See our impact</a>
+            </div>
+        </div>
+        <!-- Enabling Environment -->
+        <div class="max-w-6xl mx-auto md:flex items-center gap-8">
+            <img src="assets/img/gallery/gallery-48.jpg" alt="Environment" class="w-full md:w-1/2 h-64 object-cover rounded-lg">
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">Enabling Environment and Professionalism</h3>
+                <p class="text-gray-700 mb-4">Vicande School is dedicated to delivering high-quality education by
+                    implementing a comprehensive curriculum that addresses both academic and personal development. The
+                    school encourages students to explore their interests while developing essential skills such as
+                    critical thinking, collaboration, and creativity. Teachers focus on nurturing students’ intellectual
+                    growth through interactive learning methods, ensuring they are prepared for future academic and
+                    career challenges.</p>
+                <a href="#" class="inline-block font-semibold underline hover:text-green-600">Explore our school</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="relative bg-cover bg-center" style="background-image: url('assets/img/gallery/gallery-48.jpg');">
+        <div class="absolute inset-0 bg-green-600 opacity-60"></div>
+        <div class="relative max-w-4xl mx-auto text-center py-20 px-4 text-white" data-aos="fade-up">
+            <h2 class="text-4xl font-bold uppercase mb-4">We Are Vicande School</h2>
+            <p class="max-w-3xl mx-auto mb-6">At Vicande, we are committed to nurturing bright minds and fostering a
+                love for learning in a safe, inclusive, and stimulating environment. Our mission is to provide
+                high-quality education, empowering students to reach their fullest potential. With a focus on academic
+                excellence, character development, and creativity, we strive to shape future leaders equipped with the
+                knowledge, skills, and values to succeed in an ever-changing world.</p>
+            <p class="mb-6 font-semibold">Welcome to a community where every child thrives!</p>
+            <a href="#admissions"
+                class="inline-block bg-white text-green-600 font-semibold py-3 px-6 rounded-lg hover:bg-gray-100">Enroll
+                Now</a>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="location" class="py-16 px-4" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-green-600 text-center mb-8">Our Location</h2>
+        <div id="map" class="w-full h-96 rounded-lg shadow-lg"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200 py-12 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About -->
+            <div>
+                <h4 class="font-semibold mb-4">About Us</h4>
+                <p>Our philosophy is to create an enabling environment which employs professionalism, team spirit and
+                    innovation and provide quality education.</p>
+            </div>
+            <!-- Information -->
+            <div>
+                <h4 class="font-semibold mb-4">Information</h4>
+                <p><i class="fas fa-map-marker-alt mr-2"></i>GPS: AK-352-8566</p>
+                <p><i class="fas fa-map-pin mr-2"></i>P. M. B. AY 20 Asuoyeboa - Kumasi, Ghana</p>
+                <p><i class="fas fa-envelope mr-2"></i>info@vicandeschool.com</p>
+                <p><i class="fas fa-phone mr-2"></i>+233 244756 081</p>
+            </div>
+            <!-- Explore -->
+            <div>
+                <h4 class="font-semibold mb-4">Explore</h4>
+                <ul>
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#about" class="hover:underline">About Us</a></li>
+                    <li><a href="#admissions" class="hover:underline">Admissions</a></li>
+                    <li><a href="#academics" class="hover:underline">Academics</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-sm mt-8">&copy; 2024 Vicande School. All rights reserved.</div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true });</script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-Dv6zl6Zo2WLyns7gP0sliApF0UE16AcpA5v+ko5p0QU=" crossorigin=""></script>
+    <script>
+        // Navbar toggle
+        document.getElementById('nav-toggle').addEventListener('click', function () {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('hidden');
+        });
+        // Leaflet map initialization
+        const map = L.map('map').setView([6.692, -1.627], 15);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+        L.marker([6.692, -1.627]).addTo(map)
+            .bindPopup('Vicande School')
+            .openPopup();
+    </script>
+    <!-- Swiper JS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            autoplay: { delay: 5000 }
+        });
+    </script>
+</body>
+
+</html>
